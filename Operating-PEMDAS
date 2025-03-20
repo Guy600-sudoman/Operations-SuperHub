@@ -43,7 +43,7 @@ local AdditionTab = Window:CreateTab("Addition", "plus")
 local Button = AdditionTab:CreateButton({
    Name = "Execute the Addition Script",
    Callback = function()
-   
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Guy600-sudoman/ExecuteAddItionScript/refs/heads/main/ExecutionOfAddingLol"))()
    end,
 })
    
