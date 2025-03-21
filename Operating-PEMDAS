@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Operations SuperHub",
+   Name = "Operations SuperHub SuperHub",
    Icon = "shapes", -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Welcome to Operations Superhub",
    LoadingSubtitle = "By The Anonymous Scripter",
@@ -36,43 +36,8 @@ local Window = Rayfield:CreateWindow({
 
 local WelcomeTab = Window:CreateTab("Welcome", "handshake")
 
-local Paragraph = WelcomeTab:CreateParagraph({Title = "Welcome To Operations SuperHub", Content = "Welcome to Operations SuperHub! This is a good script I developed. Each Operation has 5 games supported. For more information, go onto the info tab to see what scripts are supported and where its located :D"})
+local Paragraph = WelcomeTab:CreateParagraph({Title = "Welcome To Operations SuperHub", Content = "Welcome to Operations SuperHub, Each operation has 5 Games suppored, using PEMDAS. Look at the Info Tab to see what scripts are supported and where."})
 
-local AdditionTab = Window:CreateTab("Addition", "plus")
+local ParenthesisTab = Window:CreateTab("Parenthesis", "parentheses")
 
-local Button = AdditionTab:CreateButton({
-   Name = "Execute the Addition Script",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Guy600-sudoman/ExecuteAddItionScript/refs/heads/main/ExecutionOfAddingLol"))()
-   end,
-})
-   
 
-local SubtractionTab = Window:CreateTab("Subtraction", "minus")
-
-local Button = SubtractionTab:CreateButton({
-   Name = "Execute the Subtraction Script",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-   end,
-})
-
-local MultiplicationTab = Window:CreateTab("Multiplication", "x")
-
-local Button = MultiplicationTab:CreateButton({
-   Name = "Execute the Multiplication Script",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-   end,
-})
-
-local DivisionTab = Window:CreateTab("Division", "divide")
-
-local Button = DivisionTab:CreateButton({
-   Name = "Execute the Division Script",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-   end,
-})
-
-local InfoTab = Window:CreateTab("Info", "info")
