@@ -40,4 +40,9 @@ local Paragraph = WelcomeTab:CreateParagraph({Title = "Welcome To Operations Sup
 
 local ParenthesisTab = Window:CreateTab("Parenthesis", "parentheses")
 
-
+local Button = ParenthesisTab:CreateButton({
+   Name = "Execute the Parenthesis Script",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Guy600-sudoman/ExecutionOfParenthesisScript/refs/heads/main/ExecutionOfParenthesisScript"))()
+   end,
+})
